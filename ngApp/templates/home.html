@@ -2,6 +2,10 @@
 
 <ul>
   <li ng-repeat="movie in vm.movies">
-    {{movie}}
+    {{movie.title}}
+    <a href="/updateMovie/{{movie.id}}">Edit</a> |
+    <a href="/deleteMovie/{{movie.id}}">Delete</a>
   </li>
 </ul>
+
+<a href="/addMovie">Add Movie</a>
